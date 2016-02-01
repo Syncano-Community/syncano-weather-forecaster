@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Syncano Weather Forecaster</title>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/syncano.min.js"></script>
+  </head>
+  <body>
+    <h1><a href="http://syncano.io">Syncano</a> Weather Forecaster</h1>
+    <p>View the docs for more information about <a href="http://docs.syncano.io/docs/webhooks">Webhooks</a> and <a href="http://docs.syncano.io/docs/codebox-overview">Codeboxes</a></p>
+    <hr>
+    <label>City</label>
+    <input type="text" id="city" /></br>
+    <label>State</label>
+    <input type="text" id="state" /></br>
+    <input type="submit" id="submit" />
+
+    <div id="weather_result"></div>
+
+    <script type="text/javascript">
+      $('#submit').on('click', function() {
+        var city = $('#city').val(),
+            state = $('#state').val();
+
+        // YOUR CODE GOES HERE
+
+        // Once you're making the correct Syncano function call, you can uncomment the lines below to output the weather data to the page:
+
+          // .then(function(response) {
+          //   var today = JSON.parse(response.result.stdout)[0]
+          //   $('#weather_result').prepend('<p>Weather for ' + today.date + ' in ' + city + ', ' + state + ' is: ' + today.text + ' with a High of ' + today.high + ' and a Low of ' + today.low);
+          // })
+      });
+    </script>
+  </body>
+</html>
