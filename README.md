@@ -4,7 +4,7 @@ This mini hack is designed to introduce you to Syncano Solutions, which can be i
 
 To get started, clone this repo:
 
-`git clone http://github.com/twack05/syncano-weather-forecaster`
+`git clone http://github.com/Syncano-Community/syncano-weather-forecaster`
 
 Open the `index.html` file in the browser of your choice. This page has already been set up with a field for `city` and `state`. JQuery and Syncano are already included on the page, and the necessary jQuery has already been written for you. It's up to you to set up what's needed in your Syncano Dashboard and write the correct code to get the weather data. There are a few things you will have to do:
 
