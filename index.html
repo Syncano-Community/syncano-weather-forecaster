@@ -4,18 +4,33 @@
     <title>Syncano Weather Forecaster</title>
     <script src="js/jquery.min.js"></script>
     <script src="js/syncano.min.js"></script>
+    <!-- Materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+    <link rel="stylesheet" href="styles/index.css">
   </head>
   <body>
-    <h1><a href="http://syncano.io">Syncano</a> Weather Forecaster</h1>
-    <p>View the docs for more information about <a href="http://docs.syncano.io/docs/webhooks">Webhooks</a> and <a href="http://docs.syncano.io/docs/codebox-overview">Codeboxes</a></p>
-    <hr>
-    <label>City</label>
-    <input type="text" id="city" /></br>
-    <label>State</label>
-    <input type="text" id="state" /></br>
-    <input type="submit" id="submit" />
+    <div class="navbar-fixed">
+      <nav>
+        <div class="nav-wrapper">
+          <a class="brand-logo" href="http://syncano.io"><img id="syncanoLogo" src="images/syncano-logo-white.png"></a>
+          <ul class="right hide-on-med-and-down">
+            <li id="navTitle">Weather Forecaster Mini Hack</li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="user-input">
+      <label>City</label>
+      <input type="text" id="city" /></br>
+      <label>State</label>
+      <input type="text" id="state" /></br>
+      <input type="submit" id="submit" />
+    </div>
 
     <div id="weather_result"></div>
+
+    <p class="center-align">Need help? View the docs for more information about <a href="http://docs.syncano.io/docs/webhooks">Webhooks</a> and <a href="http://docs.syncano.io/docs/codebox-overview">Codeboxes</a></p>
 
     <script type="text/javascript">
       $('#submit').on('click', function() {

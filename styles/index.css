@@ -1,0 +1,29 @@
+/* General */
+h1, h2, h3, h4, h5, h6 {
+  padding: 0.5em 1em 0.5em 1em;
+}
+
+/* Header */
+#syncanoLogo {
+  padding: 0.2em 1em 0 1em;
+  max-height: 1em;
+}
+
+#navTitle {
+  padding-right: 1em;
+  font-size: large;
+}
+
+.nav-wrapper {
+  background-color: rgb(52,71,112);
+}
+
+/* Main Body */
+.user-input {
+  width: 90%;
+  margin: 1em 5%;
+}
+
+.weather_result p {
+  text-align: center;
+}
